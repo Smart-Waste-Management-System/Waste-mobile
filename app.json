@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.lucasdev45.jobsift"
+    },
+    "name": "jobsift",
+    "slug": "jobsift",
+    "extra": {
+      "eas": {
+        "projectId": "027356d6-627e-4140-8965-5747eab7708f"
+      }
+    }
+  }
+}
