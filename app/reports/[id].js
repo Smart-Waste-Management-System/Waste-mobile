@@ -47,7 +47,7 @@ const ReportPage = () => {
   
   const handleSave = async () => {
     try {
-      const response = await fetch("http://14.225.255.120/reports", {
+      const response = await fetch("http://203.145.47.225:8080/reports", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

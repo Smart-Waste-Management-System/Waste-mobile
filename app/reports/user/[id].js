@@ -14,7 +14,7 @@ const AllReportsScreen = () => {
     const fetchReports = async () => {
       try {
         const response = await fetch(
-          `http://14.225.255.120/reports/user/${id}`  // Sử dụng id từ params
+          `http://203.145.47.225:8080/reports/user/${id}`  // Sử dụng id từ params
         );
         const data = await response.json();
         setReports(data);
@@ -56,7 +56,7 @@ const AllReportsScreen = () => {
           onPress: async () => {
             try {
               const response = await fetch(
-                `http://14.225.255.120/reports/${reportId}/remove`,
+                `http://203.145.47.225:8080/reports/${reportId}/remove`,
                 {
                   method: "DELETE",
                 }

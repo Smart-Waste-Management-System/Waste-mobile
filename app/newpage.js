@@ -28,7 +28,7 @@ const NewPage = () => {
 
   const fetchNearbyLocations = async (latitude, longitude) => {
     try {
-      const response = await axios.post("http://14.225.255.120/wastebins/shortest", {
+      const response = await axios.post("http://203.145.47.225:8080/wastebins/shortest", {
         start_latitude: latitude,
         start_longitude: longitude,
       });

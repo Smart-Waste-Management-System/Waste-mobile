@@ -28,7 +28,7 @@ const HomeScreen = () => {
   const fetchWasteBins = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://14.225.255.120/wastebins/all");
+      const response = await fetch("http://203.145.47.225:8080/wastebins/all");
       const data = await response.json();
       if (data.success) {
         setWasteBins(data.data);
@@ -57,7 +57,7 @@ const HomeScreen = () => {
   const handleSelectItem = async (id) => {
     setSelectedItem(id);
     try {
-      const response = await fetch(`http://14.225.255.120/wastebins/${id}/info`);
+      const response = await fetch(`http://203.145.47.225:8080/wastebins/${id}/info`);
       const data = await response.json();
       if (data.success) {
         setSelectedItemDetails(data.data);
